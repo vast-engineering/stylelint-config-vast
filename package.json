@@ -1,0 +1,33 @@
+{
+  "name": "stylelint-config-vast",
+  "version": "1.0.0",
+  "description": "Stylelint shareable config for Vast's CSS coding standards",
+  "main": "index.js",
+  "scripts": {
+    "ava": "ava --verbose '__tests__/**/*.js'",
+    "eslint": "eslint .",
+    "pretest": "npm run eslint",
+    "test": "npm run ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vast-engineering/stylelint-config-vast.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "vast"
+  ],
+  "author": "Vast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vast-engineering/stylelint-config-vast/issues"
+  },
+  "homepage": "https://github.com/vast-engineering/stylelint-config-vast#readme",
+  "devDependencies": {
+    "ava": "0.16.0",
+    "eslint": "3.2.2",
+    "eslint-config-vast": "1.0.0",
+    "stylelint": "7.1.0"
+  },
+}
