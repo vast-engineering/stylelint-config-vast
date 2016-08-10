@@ -53,6 +53,8 @@ To add a Git pre-commit hook for stylelint, run:
 ]
 ```
 
+For real time linting in your text editor, install one of the [stylelint editor plugins](http://stylelint.io/user-guide/complementary-tools/#editor-plugins).
+
 ## License
 
 [MIT](LICENSE) © 2016 Vast.com, Inc.

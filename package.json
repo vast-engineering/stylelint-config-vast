@@ -27,7 +27,7 @@
   "devDependencies": {
     "ava": "0.16.0",
     "eslint": "3.2.2",
-    "eslint-config-vast": "1.0.0",
+    "eslint-config-vast": "1.0.1",
     "stylelint": "7.1.0"
   },
   "peerDependencies": {
