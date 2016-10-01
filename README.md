@@ -9,16 +9,14 @@
 
 ## Usage
 
-Create a file named `.stylelintrc` in your project:
+Create a `.stylelintrc` file in the root of your project and add your settings and overrides there:
 
 ```javascript
 {
   "extends": "stylelint-config-vast",
   "rules": {
-    // Your overrides:
-    "indentation": "tab"
+    "indentation": null
   },
-  // Your settings:
   "ignoreFiles": "css/vendor/**/*.css",
 }
 ```
