@@ -1,7 +1,7 @@
 # stylelint-config-vast
 > Stylelint shareable config for Vast's CSS coding standards
 
-[![NPM version](https://badge.fury.io/js/stylelint-config-vast.svg)](https://www.npmjs.org/package/stylelint-config-vast)
+[![NPM version](https://badge.fury.io/js/stylelint-config-vast.svg)](https://www.npmjs.org/package/stylelint-config-vast) [![Dependency Status](https://david-dm.org/vast-engineering/stylelint-config-vast.svg)](https://david-dm.org/vast-engineering/stylelint-config-vast) [![devDependency Status](https://david-dm.org/vast-engineering/stylelint-config-vast/dev-status.svg)](https://david-dm.org/vast-engineering/stylelint-config-vast?type=dev) [![devDependency Status](https://david-dm.org/vast-engineering/stylelint-config-vast/peer-status.svg)](https://david-dm.org/vast-engineering/stylelint-config-vast?type=peer)
 
 ## Installation
 
