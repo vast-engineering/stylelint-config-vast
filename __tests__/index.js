@@ -2,7 +2,6 @@ import config from '../';
 import stylelint from 'stylelint';
 import test from 'ava';
 
-
 const validCss = (
     `a {
     top: 0.2em;
