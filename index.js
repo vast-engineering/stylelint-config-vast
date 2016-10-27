@@ -87,6 +87,7 @@ module.exports = {
         'selector-list-comma-newline-after': 'always',
         'selector-list-comma-space-before': 'never',
         'selector-max-compound-selectors': 3,
+        'selector-no-empty': true,
         'selector-no-vendor-prefix': true,
         'selector-pseudo-class-case': 'lower',
         'selector-pseudo-class-no-unknown': true,
