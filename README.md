@@ -27,11 +27,11 @@ If you haven’t already set up stylelint on your project, run:
 
     npm install stylelint --save-dev
 
-Add "stylelint" to "scripts" in `package.json`:
+Add "stylelint" to "scripts" in `package.json` (wrap globstar pattern with single quotes):
 
 ```json
 "scripts": {
-    "stylelint": "stylelint css/**/*.css",
+    "stylelint": "stylelint 'css/**/*.css'",
 }
 ```
 
@@ -51,7 +51,9 @@ To add a Git pre-commit hook for stylelint, run:
 ]
 ```
 
-For real time linting in your text editor, install one of the [stylelint editor plugins](http://stylelint.io/user-guide/complementary-tools/#editor-plugins).
+**Tip**: For real time linting in your text editor, install one of the [stylelint editor plugins](http://stylelint.io/user-guide/complementary-tools/#editor-plugins).
+
+**Tip**: [stylefmt](https://github.com/morishitter/stylefmt) can read `.stylelintrc` configuration files and automatically format the code and fix most styling errors. It can be used in many ways, but probably the easiest way is to install the `stylefmt` editor plugin.
 
 ## License
 
