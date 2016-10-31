@@ -8,7 +8,7 @@ module.exports = {
         }],
         'at-rule-name-case': 'lower',
         'at-rule-no-unknown': [true, {
-            ignoreAtRules: ['mixin', 'define-mixin']
+            ignoreAtRules: ['mixin', 'define-mixin'] // for PostCSS
         }],
         'at-rule-no-vendor-prefix': true,
         'at-rule-semicolon-newline-after': 'always',
@@ -73,7 +73,9 @@ module.exports = {
         'number-leading-zero': 'always',
         'number-no-trailing-zeros': true,
         'property-case': 'lower',
-        'property-no-unknown': true,
+        'property-no-unknown': [true, {
+            ignoreProperties: ['composes'] // for CSS Modules
+        }],
         'property-no-vendor-prefix': true,
         'root-no-standard-properties': true,
         'rule-nested-empty-line-before': ['always-multi-line', {
@@ -90,7 +92,9 @@ module.exports = {
         'selector-no-empty': true,
         'selector-no-vendor-prefix': true,
         'selector-pseudo-class-case': 'lower',
-        'selector-pseudo-class-no-unknown': true,
+        'selector-pseudo-class-no-unknown': [true, {
+            ignorePseudoClasses: ['global', 'local'] // for CSS Modules
+        }],
         'selector-pseudo-element-case': 'lower',
         'selector-pseudo-element-colon-notation': 'double',
         'selector-root-no-composition': true,
