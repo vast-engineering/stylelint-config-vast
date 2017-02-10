@@ -1,9 +1,14 @@
 'use strict';
 
 module.exports = {
+    // TODO: It is beyond the scope of stylelint's core package to effectively validate against the CSS spec.
+    // Investigate csstree and css-values for this functionality.
+    // plugins: [
+    //     'stylelint-csstree-validator'
+    // ],
     rules: {
         'at-rule-empty-line-before': ['always', {
-            except: ['blockless-group', 'first-nested'],
+            except: ['blockless-after-blockless', 'first-nested'],
             ignore: ['after-comment']
         }],
         'at-rule-name-case': 'lower',
@@ -25,7 +30,6 @@ module.exports = {
         'declaration-bang-space-after': 'never',
         'declaration-bang-space-before': 'always',
         'declaration-block-no-duplicate-properties': true,
-        'declaration-block-no-ignored-properties': true,
         'declaration-block-no-shorthand-property-overrides': true,
         'declaration-block-semicolon-newline-after': 'always-multi-line',
         'declaration-block-semicolon-space-after': 'always-single-line',
@@ -38,6 +42,7 @@ module.exports = {
         'declaration-empty-line-before': ['never', {
             ignore: ['after-comment']
         }],
+        'font-family-no-duplicate-names': true,
         'function-calc-no-unspaced-operator': true,
         'function-comma-newline-after': 'always-multi-line',
         'function-comma-space-after': 'always-single-line',
@@ -55,7 +60,6 @@ module.exports = {
         'media-feature-colon-space-after': 'always',
         'media-feature-colon-space-before': 'never',
         'media-feature-name-no-vendor-prefix': true,
-        'media-feature-no-missing-punctuation': true,
         'media-feature-parentheses-space-inside': 'never',
         'media-feature-range-operator-space-after': 'always',
         'media-feature-range-operator-space-before': 'always',
@@ -65,9 +69,6 @@ module.exports = {
         'no-duplicate-selectors': true,
         'no-empty-source': true,
         'no-eol-whitespace': true,
-        'no-indistinguishable-colors': [true, {
-            threshold: 2
-        }],
         'no-invalid-double-slash-comments': true,
         'no-missing-end-of-source-newline': true,
         'number-leading-zero': 'always',
@@ -77,11 +78,8 @@ module.exports = {
             ignoreProperties: ['composes'] // for CSS Modules
         }],
         'property-no-vendor-prefix': true,
-        'root-no-standard-properties': true,
-        'rule-nested-empty-line-before': ['always-multi-line', {
-            except: ['first-nested'], ignore: ['after-comment']
-        }],
-        'rule-non-nested-empty-line-before': ['always-multi-line', {
+        'rule-empty-line-before': ['always-multi-line', {
+            except: ['first-nested'],
             ignore: ['after-comment']
         }],
         'selector-combinator-space-after': 'always',
@@ -89,7 +87,6 @@ module.exports = {
         'selector-list-comma-newline-after': 'always',
         'selector-list-comma-space-before': 'never',
         'selector-max-compound-selectors': 3,
-        'selector-no-empty': true,
         'selector-no-vendor-prefix': true,
         'selector-pseudo-class-case': 'lower',
         'selector-pseudo-class-no-unknown': [true, {
@@ -97,7 +94,6 @@ module.exports = {
         }],
         'selector-pseudo-element-case': 'lower',
         'selector-pseudo-element-colon-notation': 'double',
-        'selector-root-no-composition': true,
         'selector-type-case': 'lower',
         'selector-type-no-unknown': true,
         'string-no-newline': true,
